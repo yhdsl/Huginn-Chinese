@@ -40,7 +40,7 @@ jobs:
           python-version: '3.10'
 
       - name: Copy i18n files
-        run: mv -f ./translate/huginn/* ./huginn
+        run: cp -r ./translate/huginn/* ./huginn
 
       - name: Run translator tool
         run: python ./tool/translator.py ./translate/rules -r $(pwd)/huginn

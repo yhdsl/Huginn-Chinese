@@ -1,0 +1,71 @@
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+zh-CN:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "不能为空"
+            password:
+              blank: "不能为空"
+            username:
+              blank: "不能为空"
+            login:
+              blank: "不能为空"
+            current_password:
+              blank: "不能为空"
+        user_credential:
+          attributes:
+            credential_name:
+              blank: "不能为空"
+            credential_value:
+              blank: "不能为空"
+        scenario:
+          attributes:
+            name:
+              blank: "不能为空"
+        agents:
+          attributes:
+            name:
+              blank: "不能为空"
+  devise:
+    failure:
+      deactivated_account: "你的账户已被管理员禁用"
+  datetime:
+    distance_in_words:
+      half_a_minute: "半分钟"
+      less_than_x_seconds:
+        one:   "不到1秒"
+        other: "不到%{count}秒"
+      x_seconds:
+        one:   "1秒"
+        other: "%{count}秒"
+      less_than_x_minutes:
+        one:   "不到1分钟"
+        other: "不到%{count}分钟"
+      x_minutes:
+        one:   "1分钟"
+        other: "%{count}分钟"
+      about_x_hours:
+        one:   "大约1小时"
+        other: "大约%{count}小时"
+      x_days:
+        one:   "1天"
+        other: "%{count}天"
+      about_x_months:
+        one:   "大约1个月"
+        other: "大约%{count}个月"
+      x_months:
+        one:   "1个月"
+        other: "%{count}个月"
+      about_x_years:
+        one:   "大约1年"
+        other: "大约%{count}年"
+      over_x_years:
+        one:   "超过1年"
+        other: "超过%{count}年"
+      almost_x_years:
+        one:   "接近1年"
+        other: "接近%{count}年"

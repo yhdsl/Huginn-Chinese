@@ -1,0 +1,10 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/devise/mailer/unlock_instructions.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+>Hello <=><
+%>!</p>=%>, 你好!</p>
+>Your account has been locked due to an excessive number of unsuccessful sign in attempts.<=>你的 Huginn 账户因为多次失败的登录尝试而被锁定<
+>Click the link below to unlock your account:<=>请点击下方的链接解锁账户:<
+'Unlock my account'='解锁我的账户'

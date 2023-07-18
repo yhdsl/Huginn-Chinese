@@ -1,0 +1,24 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/layouts/_navigation.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+>Toggle navigation<=>切换导航栏<
+nav_link "Agents"=nav_link "代理"
+" New Agent"=" 添加新的代理"
+" Run event propagation"=" 运行事件传播"
+" View Diagram"=" 查看有向图"
+nav_link "Scenarios"=nav_link "场景"
+nav_link "Events"=nav_link "事件"
+nav_link "Credentials"=nav_link "凭证"
+nav_link "Services"=nav_link "服务"
+"Search">="搜索">
+Account=用户
+'Switch Back to Admin User'='切换回管理员账号'
+link_to 'Account'=link_to '编辑账号'
+link_to 'Sign up'=link_to '注册'
+link_to 'Job Management'=link_to '任务管理'
+link_to 'User Management'=link_to '用户管理'
+link_to 'About'=link_to '关于'
+link_to 'Logout'=link_to '登出'
+link_to 'Login'=link_to '登录'

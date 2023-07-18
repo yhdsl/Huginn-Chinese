@@ -1,0 +1,13 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/home/_signed_in_index.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+>Welcome to Huginn!<=>欢迎使用 Huginn！<
+You have created <=当前已创建 <
+pluralize current_user.agents.count, "agent" %></span>.=current_user.agents.count %> 个代理</span>
+'View <='查看 <
+Your agents have recorded=最近已记录
+pluralize current_user.events.recent.count, "event" %> recently</span> and=current_user.events.recent.count %> 个代理事件</span>, 共计
+pluralize current_user.events.count, 'event' %> in total</span>.=current_user.events.count %> 个事件</span>
+'View <i='查看 <i

@@ -1,0 +1,16 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/scenarios/show.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+<h2><=<h2>场景 <
+> Scenario<=><
+' Back'=' 返回'
+' New Agent'=' 新代理'
+' View Diagram'=' 有向图'
+' Edit'=' 编辑'
+' Update'=' 更新'
+' Share'=' 分享'
+' Delete'=' 删除'
+'Enable all Agents'='启用所有的代理'
+'Disable all Agents'='禁用所有的代理'

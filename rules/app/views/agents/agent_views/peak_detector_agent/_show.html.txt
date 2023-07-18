@@ -1,0 +1,7 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/agents/agent_views/peak_detector_agent/_show.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+>Recent Trends<=>最近趋势<
+No data has been received.=未接收到任何数据

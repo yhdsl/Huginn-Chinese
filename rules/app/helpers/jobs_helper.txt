@@ -1,0 +1,13 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/helpers/jobs_helper.rb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+'failed'='已失败'
+'running'='运行中'
+'queued'='排队中'
+' ago'='之前'
+'in ' + distance_of_time_in_words(time, now)=distance_of_time_in_words(time, now) + '之后'
+"Run Agent schedule="运行计划代理
+'Run Event cleanup'='运行事件清理'
+'Run Event propagation'='运行事件传播'

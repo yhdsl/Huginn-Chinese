@@ -1,0 +1,10 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/helpers/dot_helper.rb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+"The diagram can't be displayed because it has too many nodes. Max allowed is 80."="由于节点过多, 无法显示该有向图, 最大节点数目为80"
+"The diagram can't be displayed because it is too large."="有向图过大, 无法显示"
+"Unknow error. Response code is="未知错误。状态码:
+'Agent Event Flow'='有向图'
+"#{count} events created"="已记录 #{count} 次事件"

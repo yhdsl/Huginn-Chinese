@@ -1,0 +1,19 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/scenarios/index.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+Your Scenarios=你的场景
+Scenarios are named groups of Agents.  Scenarios allow you to organize your agents,=场景可以视为代理组。使用场景可以使你方便的管理代理,
+and to import and export sets of Agents to share.=轻松的进行导入和导出, 以及分享
+'name', 'asc'='name', 'asc', name: "名称"
+>Agents<=>代理数<
+'public'='public', name: "是否公开？"
+pluralize(scenario.agents.count, "agent")="#{scenario.agents.count}个代理"
+"yes" : "no"="是" : "否"
+'Show'='详细信息'
+'Edit'='场景编辑'
+'Share'='分享'
+'Delete'='删除'
+' New Scenario'=' 新场景'
+' Import Scenario'=' 导入场景'

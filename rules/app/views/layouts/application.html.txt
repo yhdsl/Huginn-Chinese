@@ -1,0 +1,6 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/layouts/application.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+"en">="zh-CN">

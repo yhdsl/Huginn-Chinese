@@ -1,0 +1,7 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./public/404.html
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+>The page you were looking for doesn't exist.<=>页面不存在! (404)<
+>You may have mistyped the address or the page may have moved.<=>可能是你输入了错误的地址, 或者该页面已被移动。<

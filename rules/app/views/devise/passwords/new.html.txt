@@ -1,0 +1,8 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/devise/passwords/new.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+>Forgot your password?<=>忘记密码了？<
+f.label :login, :class=f.label :login, "用户名", :class
+"Send me reset password instructions"="发送重置链接"

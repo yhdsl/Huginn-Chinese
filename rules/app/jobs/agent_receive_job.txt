@@ -1,0 +1,6 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/jobs/agent_receive_job.rb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+Exception during check.=在事件接收过程中遇到异常！

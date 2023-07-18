@@ -1,0 +1,18 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/application/undefined_agents.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+Error: Agent(s) are 'missing in action'=错误: 一个或多个代理丢失
+You have one or more Agents registered in the database for which no corresponding definition is available in the source code:=在数据库中发现了一个或多个代理, 但在源代码中并没有相应的定义:
+This issue probably occurred for one or more of the following reasons:=该错误可能由以下几种原因导致:
+If the respective Agent is distributed as part of the Huginn application codebase, it may have been removed or moved to an Agent gem. Please see =如果该代理之前还在 Huginn 的选项中, 那么现在可能已被移除, 或者被移至 Agent gem 中。请参阅 
+>this wiki page for more information</a>.<=>该 Huginn Wiki 页面</a>了解更多信息<
+If the respective Agent is distributed as a Ruby gem, it might have been removed from the <code>ADDITIONAL_GEMS</code> environment setting.=如果该代理是作为 Ruby gem 的一部分使用的, 那么其可能已经从 <code>ADDITIONAL_GEMS</code> 环境中被移除了
+You can fix this issue by:=你可用使用以下方式解决该问题:
+deleting the respective Agent(s) from the database using the button below.=使用下方的按钮从数据库中删除该代理
+adding the respective Agent(s) to the the <code>ADDITIONAL_GEMS</code> environment setting. Please see =在 <code>ADDITIONAL_GEMS</code> 环境中重新添加相应的代理。请参阅 
+ for documentation on how to properly set it.= 文档页面了解如何正确设置该参数
+adding the respective Agent(s) code to the Huginn application codebase (in case it was deleted accidentally).=帮助我们将相关代理的代码添加至 Huginn 源代码仓库中 (防止被意外删除)
+' Delete Missing Agents'=' 删除丢失的代理'
+'Are you sure all missing Agents should be deleted from the database?'='所有丢失的代理都将被删除, 是否继续？'

@@ -1,0 +1,17 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/scenarios/_confirm_deletion_modal.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+>Close<=>关闭<
+How do you want to delete this Scenario?=你希望如何删除该场景？
+How do you want to delete the Scenario =你希望如何删除场景 
+%>'?=%>' ？
+>Scenario only<=>仅场景<
+Only delete the Scenerio, keep the Agents.=只会删除场景本身, 其中的代理仍然会被保留
+>Scenario and unique Agents<=>场景和独占代理<
+Also deletes Agents that are used in this Scenario only.=将会删除场景, 以及仅在该场景中使用的代理
+>Scenario and all included Agents<=>场景和全部代理<
+Deletes Scenario and all included Agents, even if they are used in different Scenarios.=将会删除场景以及全部的代理, 即使代理可能会在其他场景中被使用
+'Cancel'='取消'
+'Delete'='删除'

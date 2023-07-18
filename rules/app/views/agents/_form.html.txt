@@ -1,0 +1,26 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/agents/_form.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+<h2><=<h2>由于<
+pluralize(@agent.errors.count, "error") %> prohibited this Agent from being saved:=@agent.errors.count %>个错误导致代理无法保存:
+f.label :type=f.label :type, "类别"
+f.label :name=f.label :name, "代理名称"
+f.label :schedule, :class=f.label :schedule,"计划运行" , :class
+>This type of Agent cannot be scheduled.<=>此类型的代理无法使用计划运行<
+f.label :controllers=f.label :controllers, "调度器"
+"Other than the system-defined schedule above, this agent may be run or controlled by these user-defined Agents."="除了以上的计划运行时段外, 此代理还可以由用户自定义的代理调度运行。"
+f.label :control_targets=f.label :control_targets, "调度的代理"
+"Keep events"="事件保留时长"
+"In order to conserve disk space, you can choose to have events created by this Agent expire after a certain period of time.  Make sure you keep them long enough to allow any subsequent Agents to make use of them."="为了节约存储空间, 你可以设置此代理的事件的保留时长, 将超过时长后将删除这些事件。请确保预留了充足的时长, 以保证其他代理的访问。"
+f.label :sources=f.label :sources, "事件上游来源代理"
+"This Agent will receive events from the selected Agents."="此代理将从以下代理处接收事件"
+>This type of Agent cannot receive events.<=>此类型的代理无法接收事件<
+>Propagate immediately=>立即传播
+"Normally, Huginn moves Events from source Agents to receiving Agents once per minute. Checking this option will cause Events created by this Agent's sources to be received immediately. This can use more CPU resources, but will decrease the time between Event creation and being received by this Agent."="Huginn通常在每分钟将事件从上游代理传播到此代理中。使用该选项将使得此代理立即接收上游代理传播的事件。这可能会占用更多的CPU资源, 但是会缩短创建事件的等待时间。"
+f.label :receivers=f.label :receivers, "事件下游接收代理"
+"Events created by this Agent will be sent to the selected Agents."="以下代理将接收此代理所创建的事件"
+>This type of Agent cannot create events.<=>此类型的代理无法创建事件<
+f.label :scenarios=f.label :scenarios, "场景"
+"Use Scenarios to group sets of Agents, both for organization, and to make them easy to export and share."="使用场景对代理进行分组, 可用方便你进行管理, 以及轻松的导入与导出。"

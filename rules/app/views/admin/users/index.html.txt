@@ -1,0 +1,23 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/admin/users/index.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+          Users=          全部用户
+>Username<=>用户名<
+>Email<=>邮箱<
+>State<=>状态<
+>Active agents<=>工作的代理数<
+>Deactivated agents<=>停用的代理数<
+>Registered since<=>注册时间<
+>Options<=>选项<
+'This will log you in as another user. Would you like to continue?'='这将暂时使你登录为其他用户。继续切换吗？'
+: 'This will log you in as another user. Would you like to continue?'=: '这将暂时使你登录为其他用户。继续切换吗？'
+> ago<=>之前<
+link_to 'Become User'=link_to '切换'
+confirm: 'This will log you in as another user. Would you like to continue?'=confirm: '这将暂时使你登录为其他用户。继续切换吗？'
+link_to 'Deactivate'=link_to '停用'
+link_to 'Activate'=link_to '启用'
+link_to 'Delete'=link_to '删除'
+'Are you sure? This can not be undone.'='确定删除该用户？该操作将无法撤销！'
+' New User'=' 新用户'

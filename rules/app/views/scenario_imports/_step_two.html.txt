@@ -1,0 +1,27 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/scenario_imports/_step_two.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+This Scenario contains one or more potentially dangerous Agents.=该场景包含一个或多个危险的代理。
+These may be able to run local commands or execute code.=这些代理可能会运行本地命令或执行程序。
+Please be sure that you understand the Agent configurations before importing!=请在导入之前详细了解场景内代理的内容！
+This Scenario already exists in your system. The import will update your existing=该场景已存在于系统中。继续导入将更新现有场景
+ Scenario's title,= 的标题,
+description, and tag colors. Below you can customize how the individual agents get updated.=描述和标签颜色。在下方你可以自定义单个代理的更新内容。
+pluralize @scenario_import.parsed_data["agents"].length, "Agent" %>=@scenario_import.parsed_data["agents"].length %> 个代理
+exported <=导出于 <
+> ago)=>之前)
+" -- WARNING: this Agent's type has been changed.  This import will likely fail!"=" -- 警告: 此代理的类型已经发生了改变。 本次导入可能会失败！"
+This Agent exists in your Huginn system.=此代理已存在于系统中。
+Here are the differences between the incoming version and the one you have now. For each field, please=这是当前版本与待导入的新版本间的差异。
+select which value you'd like to keep.=请选择各个字段所需要保留的内容。
+It's already up-to-date.=当前已是最新的版本了。
+>Options for '<=> '<
+updated %>'</h4>=updated %>' 代理的配置内容</h4>
+Your current Agent's value is:=当前代理的参数是:
+Your current Agent's value is: <=当前代理的参数是: <
+>Options<=>配置内容<
+Your current options:=当前代理的配置内容:
+> I confirm that I want to import these Agents.=> 确定导入该场景的代理
+"Finish Import"="完成导入"

@@ -1,0 +1,10 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/importers/scenario_import.rb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+"appears to be invalid"="似乎无效"
+"Errors when saving '#{agent_diff.name.incoming}'="保存 '#{agent_diff.name.incoming}' 时出现错误
+"The provided data does not appear to be a valid Scenario."="所提供的内容并不包含有效的场景数据"
+"Please provide either a Scenario JSON File or a Public Scenario URL."="请提供一个包含场景数据的JSON文件, 或者一个公开的场景链接"
+"Your updated options for '#{agent_data['name']}' were unparsable."="无法解析所提供的 '#{agent_data['name']}' 参数"

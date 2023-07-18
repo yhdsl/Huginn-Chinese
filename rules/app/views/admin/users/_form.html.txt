@@ -1,0 +1,10 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/admin/users/_form.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+> Admin=> 管理员身份
+f.submit class=f.submit "创建", class
+' Back'=' 返回'
+link_to 'Become User'=link_to '切换至该用户'
+'This will log you in as another user. Would you like to continue?'='这将暂时使你登录为其他用户。继续切换吗？'

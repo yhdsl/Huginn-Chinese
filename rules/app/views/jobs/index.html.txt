@@ -1,0 +1,25 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/jobs/index.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+Background Jobs=后台任务
+>Status<=>状态<
+>Agent / Job<=>代理/任务<
+>Created<=>创建时间<
+>Next Run<=>下次运行时间<
+>Attempts<=>重试次数<
+>Last Error<=>最后一次错误内容<
+> ago<=>之前<
+> for <=>, 由用户 <
+username %><=username %> 创建<
+attempts %></td>=attempts %> 次</td>
+>Close<=>关闭<
+>Error Backtrace<=>错误回溯<
+'Run now'='运行'
+'Delete'='删除'
+'Really delete this job?'='确认删除该任务吗？'
+> Remove failed jobs=> 删除失败的任务
+> Retry queued jobs=> 重试排队的任务
+"Are you sure you want to delete ALL pending jobs for all Huginn users?"="确定要删除所有 Huginn 用户的待处理的任务吗？"
+> Remove all jobs=> 删除所有的任务

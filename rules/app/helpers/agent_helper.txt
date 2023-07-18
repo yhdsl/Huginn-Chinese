@@ -1,0 +1,9 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/helpers/agent_helper.rb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+" Show Disabled Agents"=" 显示被禁用的代理"
+" Hide Disabled Agents"=" 隐藏被禁用的代理"
+'Select an Agent Type'='选择代理类型...'
+'every_7d' ? 'Every Monday' : schedule.humanize.titleize='every_7d' ? '每周一' : schedule.gsub(/.*/, Hash[*YAML.load_file(Rails.root.join('config/agent_time.yml')).flatten])

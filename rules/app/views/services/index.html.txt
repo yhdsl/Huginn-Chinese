@@ -1,0 +1,18 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/services/index.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+Your Services=你的服务
+Before you can authenticate with a service, you need to set it up. Have a look at the Huginn=在使用服务进行身份验证之前, 你需要进行相应的设置。请参考
+link_to 'wiki'=link_to 'Huginn Wiki'
+for guidance.=了解具体的内容
+'provider', 'asc'='provider', 'asc', name: '来自于'
+'name', 'asc'='name', 'asc', name: '名称'
+'Global?'='是否公开'
+'Make private'='设为私密'
+'Are you sure you want to remove access to your data on this service for other users?'='确定要禁止其他用户访问该服务内的数据吗？'
+'Make global'='设为公开'
+'Are you sure you want to grant every user on this system access to your data on this service?'='确定要允许其他用户访问该服务内的数据吗？'
+'Delete'='删除'
+'Are you sure?'='确认要删除吗？'

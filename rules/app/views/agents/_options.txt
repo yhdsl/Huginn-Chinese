@@ -1,0 +1,17 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/agents/_options.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+>Options<=>配置内容<
+label_tag :options=label_tag :options, "配置内容"
+"In this JSON hash, interpolation is available in almost all values using the Liquid templating language.="在此 JSON 中, 几乎所有的值都可以使用 Liquid 模板进行插值。
+Available template variables include the following:<dl><dt><code>message</code>, <code>url</code>, etc.=可用的 Liquid 模板参数包括以下内容: <dl><dt><code>message</code>, <code>url</code> 等。
+Refers to the corresponding key's value of each incoming event's payload.=单个传入事件的内容中所包含的键值
+Refers to the agent that created each incoming event.  It has attributes like =创建该事件的上游代理。 其包含 
+ and = 和 
+, so =等属性, 所以如果 Liquid 模板参数为 
+will expand to <code>WebsiteAgent</code> if an incoming event is created by that agent.=其将被插值为 <code>WebsiteAgent</code>, 如果该上游代理属于该类型的话
+To access user credentials, use the <code>credential</code> tag like this: =如果想要访问用户的凭证内容, 请使用标签 <code>credential</code> , 类似于: 
+"Save"="保存"
+> Dry Run<=> 试运行<

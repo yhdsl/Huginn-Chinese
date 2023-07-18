@@ -1,0 +1,33 @@
+@AUTHOR=YHDSL
+@VERSION=1.0.0
+@TARGET=./app/views/agents/_action_menu.html.erb
+
+# docker:a22a7072a874d93dcbfba4f2d36e7000c670bfb7
+' Run'=' 运行'
+' Dry Run'=' 试运行'
+' Show'=' 详细信息'
+' Edit agent'=' 编辑代理'
+' Clone agent'=' 复制代理'
+> Enable agent=> 启用代理
+> Disable agent=> 禁用代理
+" Remove from #{scenario_label(scenario)}"=" 从场景 #{scenario_label(scenario)} 中移除"
+> Re-emit all events=> 重新发送所有事件
+' Delete all events'=' 删除所有事件'
+'Are you sure you want to delete ALL emitted events for this Agent?'='确定要删除该代理所发送的所有事件吗？'
+' Delete agent'=' 删除代理'
+'Are you sure that you want to permanently delete this Agent?'='确定要永久删除该代理吗？'
+>Close<=>关闭<
+>Confirm<=>操作确认<
+>Enable<=>启用<
+>Disable<=>禁用<
+'Drop pending events'='删除待处理的事件'
+"As soon as you enable this agent, it starts to receive pending events that have not been processed while it was disabled.  To prevent that from happening, you can check this option."="当启用该代理后, 其会开始处理在被禁用期间所接收的事件。你可以通过该选项关闭该操作。"
+'No'='否'
+'Yes'='是'
+>Close</s=>关闭</s
+>Confirm</=>操作确认</
+Re-emit all events for =重新发送所有的事件: 
+'Delete old events'='仅保留新事件'
+"If this is checked, the original copies of the events will be deleted once they are re-emitted."="选中该选项后, 将会在重新发送新事件后删除原始事件。"
+'Cancel'='取消'
+'Re-emit all events'='重新发送'

@@ -9,7 +9,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  build-and-push-huginn-image:
+  build-and-push-huginn-images:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -45,9 +45,6 @@ jobs:
       - name: Run translator tool
         run: python ./tool/translator.py ./translate/rules -r $(pwd)/huginn
 
-      - name: Copy Dockerfile
-        run: mv ./huginn/docker/multi-process/Dockerfile ./huginn
-
       - name: Log in to the Container registry
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
         with:
@@ -61,10 +58,24 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
-      - name: Build and push Docker image
+      - name: Copy huginn Dockerfile
+        run: cp -f ./huginn/docker/multi-process/Dockerfile ./huginn
+
+      - name: Build and push huginn Docker image
         uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
         with:
           context: ./huginn
           push: true
-          tags: ${{ env.REGISTRY }}/${{ github.actor }}/huginn:${{ github.sha }}
+          tags: ${{ env.REGISTRY }}/${{ github.actor }}/huginn:${{ github.sha }},${{ env.REGISTRY }}/${{ github.actor }}/huginn:latest
+          labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Copy huginn-single-process Dockerfile
+        run: cp -f ./huginn/docker/single-process/Dockerfile ./huginn
+
+      - name: Build and push huginn-single-process Docker image
+        uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
+        with:
+          context: ./huginn
+          push: true
+          tags: ${{ env.REGISTRY }}/${{ github.actor }}/huginn-single-process:${{ github.sha }},${{ env.REGISTRY }}/${{ github.actor }}/huginn-single-process:latest
           labels: ${{ steps.meta.outputs.labels }}
